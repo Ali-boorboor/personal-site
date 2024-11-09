@@ -1,0 +1,146 @@
+@import url("./grid.css");
+@import url("./fonts.css");
+
+:root {
+  --primary-color: #0abead;
+  --section-bg: #fff;
+  --main-bg: #fff;
+  --text-color: #333;
+  --transition: all 0.3s linear;
+  --box-shadow: 0 0 4rem rgba(4, 195, 255, 16%);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+  line-height: 1.5;
+}
+/* 
+
+-- header --
+
+*/
+.header {
+  background-color: var(--section-bg);
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.nav__logo {
+  font-size: 5.5rem;
+  font-family: "Poppins-Black";
+}
+
+.nav__logo-link {
+  color: var(--primary-color);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-menu__item {
+  position: relative;
+}
+
+.nav-menu__link {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-family: "Poppins-Medium";
+  color: var(--text-color);
+}
+
+.nav-menu__link--active {
+  color: var(--primary-color);
+}
+
+.nav-menu__link::after,
+.nav-menu__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0.16rem;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.nav-menu__link::before {
+  bottom: -0.4rem;
+}
+
+.nav-menu__link:hover::after {
+  width: 100%;
+}
+
+.nav-menu__link:hover::before {
+  width: 50%;
+}
+
+.nav__mobile-menu-icon {
+  cursor: pointer;
+  transition: var(--transition);
+  width: 4rem;
+  height: 4rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__mobile-menu-icon--open .nav__mobile-menu-line {
+  background-color: transparent;
+}
+
+.nav__mobile-menu-icon--open .nav__mobile-menu-line::after {
+  transform: translateY(0.6rem) rotate(45deg);
+}
+
+.nav__mobile-menu-icon--open .nav__mobile-menu-line::before {
+  transform: translateY(-0.6rem) rotate(-45deg);
+}
+
+.nav__mobile-menu-line {
+  opacity: 1;
+  position: relative;
+}
+
+.nav__mobile-menu-line,
+.nav__mobile-menu-line::after,
+.nav__mobile-menu-line::before {
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  width: 3rem;
+  height: 0.3rem;
+  transition: var(--transition);
+}
+
+.nav__mobile-menu-line::after,
+.nav__mobile-menu-line::before {
+  content: " ";
+  position: absolute;
+  bottom: 0.6rem;
+}
+
+.nav__mobile-menu-line::before {
+  bottom: -0.6rem;
+}
