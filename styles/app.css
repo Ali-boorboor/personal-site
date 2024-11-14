@@ -286,7 +286,7 @@ body {
 
 */
 .aboutus-section {
-  margin: 8rem 0;
+  margin-top: 8rem;
 }
 
 .aboutus-wrapper {
@@ -353,4 +353,87 @@ body {
   bottom: 0;
   margin: auto 0;
   background-color: var(--orange-color);
+}
+/* 
+
+-- services section --
+
+*/
+.services-section {
+  margin-top: 8rem;
+}
+
+.service-box {
+  background-color: #8540ff;
+  color: #fff;
+  height: 34rem;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.service-box--yellow {
+  background-color: #ffc50c;
+}
+
+.service-box--pink {
+  background-color: #ec407a;
+}
+
+.service-box--orange {
+  background-color: #ff6331;
+}
+
+.service-box--blue {
+  background-color: #13b6ff;
+}
+
+.service-box--green {
+  background-color: #49af46;
+}
+
+.service-box__icon {
+  width: 6.8rem;
+  height: 6.8rem;
+}
+
+.service-box__title {
+  font-family: "Poppins-Bold";
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.service-box__caption {
+  text-align: center;
+}
+
+.service-box__shape {
+  position: absolute;
+  bottom: 0;
+  fill: #803afb;
+  z-index: -1;
+}
+
+.service-box__shape--yellow {
+  fill: #ffbb01;
+}
+
+.service-box__shape--pink {
+  fill: #f5276c;
+}
+
+.service-box__shape--orange {
+  fill: #ff5823;
+}
+
+.service-box__shape--blue {
+  fill: #03acf8;
+}
+
+.service-box__shape--green {
+  fill: #49b846;
 }
