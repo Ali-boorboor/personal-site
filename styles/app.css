@@ -36,6 +36,11 @@ body {
   align-items: center;
 }
 
+.section-content-links {
+  display: flex;
+  gap: 2rem;
+}
+
 .main-link {
   width: 16rem;
   height: 4rem;
@@ -58,6 +63,42 @@ body {
 .main-link--orange {
   background-color: var(--orange-color);
   box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 24%);
+}
+
+.section-header {
+  text-align: center;
+  padding: 0 0 6rem 0;
+}
+
+.section-header__title {
+  color: var(--primary-color);
+  font-family: "Poppins-Bold";
+  font-size: 4rem;
+}
+
+.section-header__caption {
+  letter-spacing: 0.4rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.section-header__line {
+  display: block;
+  width: 20rem;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  position: relative;
+  margin: 0 auto;
+}
+
+.section-header__line::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 4rem;
+  width: 4rem;
+  height: 1rem;
+  inset: 0;
+  margin: auto;
 }
 /* 
 
@@ -176,7 +217,7 @@ body {
 
 .nav__mobile-menu-line::after,
 .nav__mobile-menu-line::before {
-  content: " ";
+  content: "";
   position: absolute;
   bottom: 0.6rem;
 }
@@ -194,17 +235,11 @@ body {
 -- home section --
 
 */
-.main {
-}
-
 .home-section {
   margin-top: 8rem;
   background: url("../assets/images/shapes/header-shape.svg") no-repeat bottom;
   background-size: contain;
   height: 90vh;
-}
-
-.home-content {
 }
 
 .home-content__name {
@@ -228,11 +263,6 @@ body {
   opacity: 0.7;
 }
 
-.home-content-links {
-  display: flex;
-  gap: 2rem;
-}
-
 .home-avatar {
   width: 50rem;
   height: 50rem;
@@ -249,4 +279,78 @@ body {
   width: 100%;
   fill: var(--primary-color);
   bottom: 0;
+}
+/* 
+
+-- about us section --
+
+*/
+.aboutus-section {
+  margin: 8rem 0;
+}
+
+.aboutus-wrapper {
+  display: flex;
+  box-shadow: var(--box-shadow);
+  background-color: var(--section-bg);
+  min-height: 50rem;
+}
+
+.aboutus-img {
+  flex-basis: 48%;
+}
+
+.aboutus-img__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutus-contents {
+  flex-basis: 52%;
+  padding: 4rem 3rem;
+}
+
+.aboutus-contents__title {
+  color: var(--primary-color);
+  font-family: "Poppins-SemiBold";
+  font-size: 2.4rem;
+}
+
+.aboutus-contents__caption {
+  margin: 1rem 0 6rem 0;
+  min-width: 20rem;
+  max-width: 60rem;
+}
+
+.aboutus-contents__list-title {
+  color: var(--primary-color);
+  font-family: "Poppins-SemiBold";
+  font-size: 1.8rem;
+}
+
+.aboutus-list {
+  padding-left: 1rem;
+  margin: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aboutus-list__list-item {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.aboutus-list__list-item::before {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-color: var(--orange-color);
 }

@@ -30,7 +30,24 @@
     border-width: 1rem;
   }
   .home-section {
-    height: 70vh;
+    height: auto;
+    background: none;
+  }
+  .aboutus-contents {
+    padding: 2rem;
+  }
+  .aboutus-contents__caption {
+    margin: 1rem 0 4rem 0;
+  }
+  .aboutus-wrapper {
+    flex-direction: column;
+  }
+  .aboutus-img,
+  .aboutus-contents {
+    flex-basis: 100%;
+  }
+  .section-header__title {
+    font-size: 2.8rem;
   }
 }
 
@@ -81,7 +98,7 @@
     align-items: center;
     text-align: center;
   }
-  .home-content-links {
+  .section-content-links {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
@@ -95,12 +112,21 @@
   }
   .home-section {
     margin-top: 1rem;
-    height: auto;
-    background: none;
   }
   .home-avatar {
     width: 26rem;
     height: 26rem;
+  }
+  .aboutus-contents__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .aboutus-contents__caption {
+    text-align: justify;
+  }
+  .aboutus-list__list-item::before {
+    width: 1rem;
+    height: 1rem;
   }
 }
 
@@ -108,7 +134,7 @@
   .home-content__title {
     font-size: 2.8rem;
   }
-  .home-content-links .main-link {
+  .section-content-links .main-link {
     width: 100%;
   }
 }
