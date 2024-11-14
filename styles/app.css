@@ -8,6 +8,12 @@
   --text-color: #333;
   --transition: all 0.3s linear;
   --box-shadow: 0 0 4rem rgba(4, 195, 255, 16%);
+  --orange-color: #f57f17;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 html {
@@ -15,9 +21,43 @@ html {
 }
 
 body {
+  padding-top: 9rem;
   font-size: 1.6rem;
   font-family: "Poppins";
   line-height: 1.5;
+  color: var(--text-color);
+}
+/* 
+
+-- helper classes --
+
+*/
+.align-center {
+  align-items: center;
+}
+
+.main-link {
+  width: 16rem;
+  height: 4rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 1.5rem 4rem rgba(11, 190, 173, 41%);
+  color: #fff;
+  font-family: "Poppins-SemiBold";
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.main-link:hover {
+  opacity: 0.7;
+  transform: scale(0.96);
+}
+
+.main-link--orange {
+  background-color: var(--orange-color);
+  box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 24%);
 }
 /* 
 
@@ -143,4 +183,70 @@ body {
 
 .nav__mobile-menu-line::before {
   bottom: -0.6rem;
+}
+/* 
+
+-- main --
+
+*/
+/* 
+
+-- home section --
+
+*/
+.main {
+}
+
+.home-section {
+  margin-top: 8rem;
+  background: url("../assets/images/shapes/header-shape.svg") no-repeat bottom;
+  background-size: contain;
+  height: 90vh;
+}
+
+.home-content {
+}
+
+.home-content__name {
+  font-size: 2rem;
+  font-family: "Poppins-SemiBold";
+  color: var(--primary-color);
+}
+
+.home-content__name--orange {
+  color: var(--orange-color);
+}
+
+.home-content__title {
+  font-size: 4rem;
+  color: var(--primary-color);
+  font-family: "Poppins-Bold";
+}
+
+.home-content__caption {
+  margin: 1rem 0 2rem 0;
+  opacity: 0.7;
+}
+
+.home-content-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.home-avatar {
+  width: 50rem;
+  height: 50rem;
+  border-radius: 100%;
+  border: 2rem solid var(--section-bg);
+  box-shadow: var(--box-shadow);
+  background: url("../assets/images/jpg/header-avatar.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.home-section__wave {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  fill: var(--primary-color);
+  bottom: 0;
 }
