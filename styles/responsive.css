@@ -92,6 +92,11 @@
     z-index: 99;
     opacity: 1;
   }
+  .services-section,
+  .aboutus-section,
+  .home-section {
+    padding-top: 4rem;
+  }
   .home-content {
     display: flex;
     flex-direction: column;
@@ -109,9 +114,6 @@
   }
   .home-section .row {
     flex-direction: column-reverse;
-  }
-  .home-section {
-    margin-top: 1rem;
   }
   .home-avatar {
     width: 26rem;

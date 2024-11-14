@@ -230,13 +230,17 @@ body {
 -- main --
 
 */
+.services-section,
+.aboutus-section,
+.home-section {
+  padding-top: 8rem;
+}
 /* 
 
 -- home section --
 
 */
 .home-section {
-  margin-top: 8rem;
   background: url("../assets/images/shapes/header-shape.svg") no-repeat bottom;
   background-size: contain;
   height: 90vh;
@@ -285,10 +289,6 @@ body {
 -- about us section --
 
 */
-.aboutus-section {
-  margin-top: 8rem;
-}
-
 .aboutus-wrapper {
   display: flex;
   box-shadow: var(--box-shadow);
@@ -359,10 +359,6 @@ body {
 -- services section --
 
 */
-.services-section {
-  margin-top: 8rem;
-}
-
 .service-box {
   background-color: #8540ff;
   color: #fff;
