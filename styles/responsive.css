@@ -51,7 +51,7 @@
   }
   .resume-section {
     margin-top: 4rem;
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   .resume-menu {
     flex-direction: row;
@@ -80,6 +80,12 @@
   }
   .resume-content-title__title::before {
     display: none;
+  }
+  .resume-content__caption-title {
+    margin: 0;
+  }
+  .resume-content {
+    margin-bottom: 1rem;
   }
 }
 
