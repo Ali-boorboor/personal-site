@@ -49,6 +49,38 @@
   .section-header__title {
     font-size: 2.8rem;
   }
+  .resume-section {
+    margin-top: 4rem;
+    padding: 4rem 0;
+  }
+  .resume-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .resume-menu::before,
+  .resume-menu__list-item::before,
+  .resume-menu__list-item-icon {
+    display: none;
+  }
+  .resume-menu__list-item {
+    padding: 0.8rem 2rem;
+    border-radius: 4rem;
+  }
+  .resume-menu__list-item--active {
+    background-color: var(--primary-color);
+  }
+  .resume-content-wrapper {
+    border-left: none;
+    padding-left: 0;
+  }
+  .resume-content-title__title::before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
