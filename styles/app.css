@@ -71,6 +71,16 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 24%);
 }
 
+.main-link--purple {
+  background-color: #8540ff;
+  box-shadow: 0 1.5rem 4rem rgba(128, 58, 251, 24%);
+}
+
+.main-link--pink {
+  background-color: #ec407a;
+  box-shadow: 0 1.5rem 4rem rgba(245, 39, 108, 24%);
+}
+
 .section-header {
   text-align: center;
   padding: 0 0 6rem 0;
@@ -256,6 +266,7 @@ body {
   font-size: 2rem;
   font-family: "Poppins-SemiBold";
   color: var(--primary-color);
+  text-wrap: nowrap;
 }
 
 .home-content__name--orange {
@@ -485,6 +496,11 @@ body {
   color: var(--text-color);
   cursor: pointer;
   transition: var(--transition);
+  z-index: 2;
+}
+
+.resume-menu__list-item:hover {
+  transform: translateX(1rem);
 }
 
 .resume-menu__list-item::before {
@@ -585,4 +601,85 @@ body {
 
 .resume-content__caption {
   max-width: 64rem;
+}
+/* 
+
+-- pricing section --
+
+*/
+.pricing-section {
+  margin-top: 8rem;
+  padding: 8rem 0;
+  transform: skewY(-6deg);
+  background-color: var(--section-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.price-box {
+  box-shadow: var(--box-shadow);
+}
+
+.price-box__header {
+  background-color: #8540ff;
+  color: #fff;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price-box__header--orange {
+  background-color: var(--orange-color);
+}
+
+.price-box__header--pink {
+  background-color: #ec407a;
+}
+
+.price-box__title {
+  font-family: "Poppins-SemiBold";
+  font-size: 2.4rem;
+}
+
+.price-box__price {
+  font-family: "Poppins-SemiBold";
+  font-size: 2rem;
+}
+
+.price-box__caption {
+  text-wrap: nowrap;
+}
+
+.price-box__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: var(--main-bg);
+}
+
+.price-box__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.price-box__list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.price-box__list-item-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--text-color);
+}
+
+.price-box__list-item-text {
+  text-wrap: nowrap;
 }
