@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/app.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
     <title>WA</title>
   </head>
   <body>
@@ -26,7 +27,7 @@
               <a href="#resume" class="nav-menu__link">Resume</a>
             </li>
             <li class="nav-menu__item">
-              <a href="#" class="nav-menu__link">Portfolio</a>
+              <a href="#portfolio" class="nav-menu__link">Portfolio</a>
             </li>
             <li class="nav-menu__item">
               <a href="#pricing" class="nav-menu__link">Pricing</a>
@@ -442,6 +443,52 @@
           </div>
         </div>
       </section>
+      <section id="portfolio" class="portfolio-section">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-header__title">Portfolio</h3>
+            <p class="section-header__caption">Check in Our Latest Works</p>
+            <span class="section-header__line"></span>
+          </div>
+          <ul class="portfolio-menu">
+            <li class="portfolio-menu__list-item portfolio-menu__list-item--active">All Work</li>
+            <li class="portfolio-menu__list-item">Illustration</li>
+            <li class="portfolio-menu__list-item">Animation</li>
+            <li class="portfolio-menu__list-item">App UI</li>
+            <li class="portfolio-menu__list-item">Web UI</li>
+            <li class="portfolio-menu__list-item">Social Media</li>
+            <li class="portfolio-menu__list-item">Print Design</li>
+          </ul>
+          <div class="slider-content">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-1.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-2.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-3.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="pricing" class="pricing-section">
         <div class="container skew-reset">
           <div class="section-header">
@@ -731,6 +778,7 @@
       </section>
     </main>
     <div class="cover"></div>
+    <script src="./scripts/swiper-bundle.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
