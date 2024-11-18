@@ -15,25 +15,25 @@
           <h1 class="nav__logo"><a href="#" class="nav__logo-link">WA.</a></h1>
           <ul class="nav-menu">
             <li class="nav-menu__item">
-              <a href="#home" class="nav-menu__link nav-menu__link--active">Home</a>
+              <a href="#" data-list-id="home" class="nav-menu__link nav-menu__link--active">Home</a>
             </li>
             <li class="nav-menu__item">
-              <a href="#about-us" class="nav-menu__link">About us</a>
+              <a href="#" data-list-id="about-us" class="nav-menu__link">About us</a>
             </li>
             <li class="nav-menu__item">
-              <a href="#services" class="nav-menu__link">Services</a>
+              <a href="#" data-list-id="services" class="nav-menu__link">Services</a>
             </li>
             <li class="nav-menu__item">
-              <a href="#resume" class="nav-menu__link">Resume</a>
+              <a href="#" data-list-id="resume" class="nav-menu__link">Resume</a>
             </li>
             <li class="nav-menu__item">
-              <a href="#portfolio" class="nav-menu__link">Portfolio</a>
+              <a href="#" data-list-id="portfolio" class="nav-menu__link">Portfolio</a>
             </li>
             <li class="nav-menu__item">
-              <a href="#pricing" class="nav-menu__link">Pricing</a>
+              <a href="#" data-list-id="pricing" class="nav-menu__link">Pricing</a>
             </li>
             <li class="nav-menu__item">
-              <a href="#" class="nav-menu__link">Contact</a>
+              <a href="#" data-list-id="contact" class="nav-menu__link">Contact</a>
             </li>
           </ul>
           <div type="button" class="nav__mobile-menu-icon">
@@ -451,15 +451,20 @@
             <span class="section-header__line"></span>
           </div>
           <ul class="portfolio-menu">
-            <li class="portfolio-menu__list-item portfolio-menu__list-item--active">All Work</li>
-            <li class="portfolio-menu__list-item">Illustration</li>
-            <li class="portfolio-menu__list-item">Animation</li>
-            <li class="portfolio-menu__list-item">App UI</li>
-            <li class="portfolio-menu__list-item">Web UI</li>
-            <li class="portfolio-menu__list-item">Social Media</li>
-            <li class="portfolio-menu__list-item">Print Design</li>
+            <li
+              data-list-id="all-work"
+              class="portfolio-menu__list-item portfolio-menu__list-item--active"
+            >
+              All Work
+            </li>
+            <li data-list-id="illustration" class="portfolio-menu__list-item">Illustration</li>
+            <li data-list-id="animation" class="portfolio-menu__list-item">Animation</li>
+            <li data-list-id="app-ui" class="portfolio-menu__list-item">App UI</li>
+            <li data-list-id="web-ui" class="portfolio-menu__list-item">Web UI</li>
+            <li data-list-id="social-media" class="portfolio-menu__list-item">Social Media</li>
+            <li data-list-id="print-design" class="portfolio-menu__list-item">Print Design</li>
           </ul>
-          <div class="slider-content">
+          <div id="all-work" class="slider-content slider-content--visible">
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -472,6 +477,132 @@
                 <div class="swiper-slide">
                   <img
                     src="./assets/images/jpg/portfolio-2.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-3.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="illustration" class="slider-content">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-1.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-1.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-1.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="animation" class="slider-content">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-2.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-2.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-2.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="app-ui" class="slider-content">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-3.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="web-ui" class="slider-content">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-2.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="social-media" class="slider-content">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-2.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-3.jpg"
+                    alt="portfolio"
+                    class="swiper-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="print-design" class="slider-content">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/jpg/portfolio-1.jpg"
                     alt="portfolio"
                     class="swiper-slide__img"
                   />
@@ -776,7 +907,100 @@
           </div>
         </div>
       </section>
+      <section id="contact" class="contact-section">
+        <div class="section-header">
+          <h3 class="section-header__title">Contact us</h3>
+          <p class="section-header__caption">Let's Keep In Touch</p>
+          <span class="section-header__line"></span>
+        </div>
+        <div class="contact-wrapper">
+          <div class="container">
+            <div class="row align-center">
+              <div class="col-6">
+                <div class="map-icon-wrapper">
+                  <img
+                    src="./assets/images/icons/map-icon.svg"
+                    alt="map-icon"
+                    class="map-icon-wrapper__img"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <form class="contact-form">
+                  <h6 class="contact-form__title">Get in Touch</h6>
+                  <input type="text" class="contact-form__input" placeholder="Your Name" />
+                  <input
+                    type="email"
+                    class="contact-form__input"
+                    placeholder="Your Email Address"
+                  />
+                  <input type="text" class="contact-form__input" placeholder="Subject" />
+                  <input type="number" class="contact-form__input" placeholder="Estimated Budget" />
+                  <textarea
+                    rows="6"
+                    class="contact-form__textarea"
+                    placeholder="Enter your Message"
+                  ></textarea>
+                  <button type="submit" class="contact-form__btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <p class="footer__copy-right">© 2019 createuiux. All rights reserved.</p>
+          <div class="icons-wrapper">
+            <div class="icons-wrapper__icon-holder" id="theme-changer-btn">
+              <img
+                src="./assets/images/icons/dark-mode.svg"
+                alt="dark-mode-icon"
+                class="icons-wrapper__icon-holder-img"
+                id="theme-changer-icon"
+              />
+            </div>
+            <div class="icons-wrapper__icon-holder">
+              <img
+                src="./assets/images/icons/behance.svg"
+                alt="behance"
+                class="icons-wrapper__icon-holder-img"
+              />
+            </div>
+            <div class="icons-wrapper__icon-holder">
+              <img
+                src="./assets/images/icons/dribbble.svg"
+                alt="dribbble"
+                class="icons-wrapper__icon-holder-img"
+              />
+            </div>
+            <div class="icons-wrapper__icon-holder">
+              <img
+                src="./assets/images/icons/facebook.svg"
+                alt="facebook"
+                class="icons-wrapper__icon-holder-img"
+              />
+            </div>
+            <div class="icons-wrapper__icon-holder">
+              <img
+                src="./assets/images/icons/pinterest.svg"
+                alt="pinterest"
+                class="icons-wrapper__icon-holder-img"
+              />
+            </div>
+            <div class="icons-wrapper__icon-holder">
+              <img
+                src="./assets/images/icons/skype.svg"
+                alt="skype"
+                class="icons-wrapper__icon-holder-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <div class="cover"></div>
     <script src="./scripts/swiper-bundle.min.js"></script>
     <script src="./scripts/main.js"></script>

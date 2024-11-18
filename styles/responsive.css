@@ -88,6 +88,9 @@
   .resume-content {
     margin-bottom: 1rem;
   }
+  .map-icon-wrapper {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -131,6 +134,8 @@
     z-index: 99;
     opacity: 1;
   }
+  .contact-section,
+  .portfolio-section,
   .services-section,
   .aboutus-section,
   .home-section {
@@ -171,6 +176,12 @@
   }
   .resume-menu__list-item:hover {
     transform: scale(1.04);
+  }
+  .footer-wrapper {
+    justify-content: center;
+  }
+  .footer__copy-right {
+    text-align: center;
   }
 }
 
