@@ -14,8 +14,10 @@ const changeThemeIcon = $.querySelector("#theme-changer-icon");
 const theme = localStorage.getItem("theme");
 if (theme === "dark-mode") {
   document.documentElement.classList.add("dark-mode");
+  changeThemeIcon.src = "./assets/images/icons/light-mode.svg";
 } else {
   document.documentElement.classList.remove("dark-mode");
+  changeThemeIcon.src = "./assets/images/icons/dark-mode.svg";
 }
 changeThemeBtn.addEventListener("click", () => {
   document.documentElement.classList.toggle("dark-mode");
@@ -39,7 +41,9 @@ navMobileMenuIcon.addEventListener("click", () => {
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener("click", (e) => {
     const menuItemActive = $.querySelector(".nav-menu__link--active");
-    const selectedSection = $.querySelector(`#${menuItem.getAttribute("data-list-id")}`);
+    const selectedSection = $.querySelector(
+      `#${menuItem.getAttribute("data-list-id")}`
+    );
     const offsetTopSection = selectedSection.offsetTop - 90;
     e.preventDefault();
     menuItemActive.classList.remove("nav-menu__link--active");
@@ -61,7 +65,9 @@ function observerHandler(allSections) {
   allSections.map((sections) => {
     if (sections.isIntersecting) {
       let sectionId = sections.target.id;
-      const selectedSection = $.querySelector(`.nav-menu__link[data-list-id=${sectionId}]`);
+      const selectedSection = $.querySelector(
+        `.nav-menu__link[data-list-id=${sectionId}]`
+      );
       const activeMenuItem = $.querySelector(".nav-menu__link--active");
       activeMenuItem.classList.remove("nav-menu__link--active");
       selectedSection.classList.add("nav-menu__link--active");
@@ -74,7 +80,9 @@ function classListHandler(listItems, activeItemClass, visibleContentClass) {
   listItems.forEach((listItem) => {
     listItem.addEventListener("click", () => {
       const activeItem = $.querySelector(`.${activeItemClass}`);
-      const selectedContent = $.querySelector(`#${listItem.getAttribute("data-list-id")}`);
+      const selectedContent = $.querySelector(
+        `#${listItem.getAttribute("data-list-id")}`
+      );
       const visibleContent = $.querySelector(`.${visibleContentClass}`);
       activeItem.classList.remove(activeItemClass);
       visibleContent.classList.remove(visibleContentClass);
